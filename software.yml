@@ -1,0 +1,13 @@
+- name: Installing software
+  hosts: users2
+  become: true
+  tasks:
+
+    - name: Update system
+      package:
+        name: "*"
+        state: latest
+
+    - name: Install software
+      package:
+        name: nmap
