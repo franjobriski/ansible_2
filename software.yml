@@ -1,5 +1,5 @@
 - name: Installing software
-  hosts: users2
+  hosts: all
   become: true
   tasks:
 
